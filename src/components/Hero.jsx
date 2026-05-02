@@ -59,14 +59,15 @@ export default function Hero() {
             engineering meets aesthetic precision.
           </motion.p>
           <div className="flex flex-wrap gap-4">
-            <motion.button
+            <motion.a
+              href="#projects"
               variants={wordVars}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95, transition: { type: "spring", stiffness: 400, damping: 10 } }}
-              className="bg-primary text-on-primary font-bold px-10 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all"
+              className="bg-primary text-on-primary font-bold px-10 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all inline-block"
             >
               View Projects
-            </motion.button>
+            </motion.a>
             <motion.button
               variants={wordVars}
               whileHover={{ scale: 1.05 }}
