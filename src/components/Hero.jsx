@@ -37,7 +37,7 @@ export default function Hero() {
             Available for Hire
           </motion.span>
           <motion.h1
-            className="font-display-xl text-display-xl text-on-surface mb-6 flex flex-wrap gap-x-[0.3em]"
+            className="font-display-xl text-5xl md:text-7xl lg:text-display-xl text-on-surface mb-6 flex flex-wrap gap-x-[0.3em]"
             variants={containerVars}
           >
             {words.map((word, i) => (
@@ -52,7 +52,7 @@ export default function Hero() {
           </motion.h1>
           <motion.p
             variants={wordVars}
-            className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl"
+            className="font-body-lg text-lg md:text-body-lg text-on-surface-variant mb-10 max-w-xl"
           >
             I am a Full-Stack Developer specializing in high-performance web
             applications and intuitive user interfaces. Transformative

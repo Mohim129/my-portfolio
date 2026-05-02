@@ -1,4 +1,4 @@
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter, Playwrite_NO } from "next/font/google";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -11,6 +11,10 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const playwriteNO = Playwrite_NO({
+  variable: "--font-playwrite-no",
+});
+
 export const metadata = {
   title: "Tech Expert Portfolio",
   description: "Senior Full-Stack Developer specializing in high-performance web applications.",
@@ -20,7 +24,7 @@ import SmoothScrolling from "@/components/SmoothScrolling";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable}`}>
+    <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable} ${playwriteNO.variable}`}>
       <head>
         <link
           rel="stylesheet"

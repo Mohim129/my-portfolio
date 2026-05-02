@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="py-section-padding bg-surface-container-low">
+    <section id="contact" className="py-section-padding bg-surface-container-low">
       <div className="max-w-[1280px] mx-auto px-8">
         <div className="bg-primary-container rounded-[48px] p-16 md:p-24 text-center relative overflow-hidden">
           {/* Geometric Accents */}

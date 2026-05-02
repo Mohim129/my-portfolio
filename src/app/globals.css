@@ -107,6 +107,10 @@
   vertical-align: middle;
 }
 
+.font-playwrite {
+  font-family: var(--font-playwrite-no), cursive;
+}
+
 .floating-stack-item {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

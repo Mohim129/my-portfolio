@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
       <div className="flex justify-between items-center max-w-[1280px] mx-auto px-8 h-20">
-        <div className="text-xl font-extrabold tracking-tighter text-indigo-600 dark:text-indigo-400 cursor-pointer">
+        <div className="text-xl font-extrabold tracking-tighter text-indigo-600 dark:text-indigo-400 cursor-pointer font-playwrite">
           Mohim
         </div>
 
