@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --color-outline-variant: #c8c4d8;
+  --color-inverse-on-surface: #f2efff;
+  --color-surface-container-highest: #e2e0fc;
+  --color-surface-container-low: #f5f2ff;
+  --color-secondary-fixed: #82f6e3;
+  --color-on-surface: #1a1a2e;
+  --color-on-error-container: #93000a;
+  --color-on-secondary-fixed-variant: #005047;
+  --color-inverse-primary: #c5c0ff;
+  --color-tertiary-fixed-dim: #c5c7c8;
+  --color-on-tertiary: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-outline: #787587;
+  --color-primary-fixed-dim: #c5c0ff;
+  --color-on-background: #1a1a2e;
+  --color-secondary-fixed-dim: #64d9c7;
+  --color-on-secondary-fixed: #00201c;
+  --color-on-primary-fixed: #150067;
+  --color-surface-container: #efecff;
+  --color-on-error: #ffffff;
+  --color-primary-fixed: #e4dfff;
+  --color-on-primary-container: #ccc6ff;
+  --color-on-tertiary-fixed: #191c1d;
+  --color-on-tertiary-container: #cbcdce;
+  --color-secondary-container: #82f6e3;
+  --color-secondary: #006b5f;
+  --color-surface-bright: #fcf8ff;
+  --color-tertiary: #3d4041;
+  --color-on-tertiary-fixed-variant: #454748;
+  --color-inverse-surface: #2f2e43;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #e2e0fc;
+  --color-tertiary-container: #545758;
+  --color-surface-tint: #5440e6;
+  --color-on-surface-variant: #474555;
+  --color-on-secondary: #ffffff;
+  --color-tertiary-fixed: #e1e3e4;
+  --color-surface-dim: #dad7f3;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #4c35de;
+  --color-on-primary-fixed-variant: #3b1bcf;
+  --color-error: #ba1a1a;
+  --color-primary: #3304c8;
+  --color-on-secondary-container: #007165;
+  --color-surface: #fcf8ff;
+  --color-background: #fcf8ff;
+
+  --spacing-section-padding: 120px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: 16px;
+  --spacing-stack-lg: 32px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+
+  --font-display-xl: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+
+  --text-display-xl: 64px;
+  --text-display-xl--line-height: 1.1;
+  --text-display-xl--letter-spacing: -0.02em;
+  --text-display-xl--font-weight: 800;
+
+  --text-headline-lg: 48px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--font-weight: 700;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+
+  --text-label-md: 14px;
+  --text-label-md--line-height: 1.2;
+  --text-label-md--font-weight: 600;
+
+  --text-headline-sm: 24px;
+  --text-headline-sm--line-height: 1.4;
+  --text-headline-sm--font-weight: 600;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-headline-md: 32px;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-md--font-weight: 700;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body-md;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.floating-stack-item {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-stack-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(51, 4, 200, 0.1);
+}
