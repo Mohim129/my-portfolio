@@ -52,6 +52,10 @@ const skills = [
     name: "Next.js",
     logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
   },
+  {
+    name: "Firebase",
+    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg",
+  },
 ];
 
 export default function SkillsMarquee() {
