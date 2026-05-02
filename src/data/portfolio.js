@@ -18,29 +18,34 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Omni-Channel Analytics Hub",
-    description: "Real-time data processing engine for e-commerce enterprises.",
+    title: "Github Issue Tracker",
+    description: "Track your github issues and manage them efficiently.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAYMFajDpf9pqS03OCArWt7nU119EyCSpUKzhqJ-T_ilqZpuR0UBu_3za_e5oMGAMHsPm_L7GwOsTYRYemQ9DyxtWiXxl-RxWOwpISrBHTxANxwMtct0ZcnKLdauD7TkbPiHCwjGcknSLHSNOzURCHjCESbTFkb4AtI2wd2D9V-VLGj-6kmwngMzB78l_OWxe16vJqn77i1It_S9VsSHdKsSq6Y4DWZ9SYD-DV6kYwMRNbhjlCIgYEercznBiYf_l8rUhK54NV9dIrN",
-    tags: ["React", "Node"],
+      "https://i.ibb.co.com/FkSyCdpV/github-issue-tracker.png",
+    tags: ["Tailwind", "DOM Manipulation"],
     mt: "",
+    liveLink: "https://mohim129.github.io/B13-A5-Github-Issue-Tracker/",
+    gitLink: "",
   },
   {
-    title: "CloudOps Automation",
+    title: "Digitool",
     description:
-      "Simplifying infrastructure deployments with intelligent CI/CD pipelines.",
+      "Your go to place for all your digital tools.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDQmeKixr_n590w7JITpLO5w2HH4RshhncXqXJBta3eFe5lxN4DD18v4o_ni5F1N81qBNfu_mmKwMWQhcviiHkQEcrkCX68VsIlwafuDBYvbMS20R6Yo_eI9RxfuOrAgcuNUZ8tDac2HFqZSHtyjCGRwO_4-VW5lhT05zp-Fvn_XX0eOQlkbDDsrYd-nTFNR5IGZ4-kQdfesfGEf7NWe2xTlNF21RbB6hSJKzs7NQmI3vK8Q3txA0zTOAJT8DQmTYst5UorM_SfYO2a",
-    tags: ["Next.js", "AWS"],
+      "https://i.ibb.co.com/N6y9jMyF/digitool.png",
+    tags: ["React js"],
     mt: "md:mt-16",
+    liveLink: "https://digitool-assignment6.netlify.app/",
   },
   {
-    title: "Pulse Health Tracker",
-    description: "Custom health monitoring solution with predictive AI insights.",
+    title: "KeenKeeper",
+    description: "A Space to be connected and to keep track of important information of your loved ones.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBP5gUuzwFc-u96FxJT5UlezHkrmY4WGV4KSi-cral61ld05TSrtKht6w8u2JHhIOWMSGW7OCtg0ZgIxIBEWIXgDn1awmr8okWpr4VCX8TT0bXPtA07D3w2BChsj_F6iWipEyi8cWnsnrwZifMJdSIOecZ9iFED73W5pc2pc1krrcIwL_t0h_CM03MnSN40CiNRplStqdZxCOC6N8o0SYZKdfkW2jDfMvrmgjOS0g6RRunGk7r3PLttG1T_QCBWcXqbyAipZBcJy6hL",
-    tags: ["Native", "Figma"],
+      "https://i.ibb.co.com/kgwjFbVQ/Keen-Keeper.png",
+    tags: ["React Js", "React Router"],
     mt: "",
+    liveLink: "https://assignment7-keenkeeper.netlify.app/",
+    gitLink: "",
   },
   {
     title: "LuxeCommerce Framework",

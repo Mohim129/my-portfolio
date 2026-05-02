@@ -27,11 +27,11 @@ const skills = [
     // Placeholder: a simple daisy icon (replace with actual DaisyUI logo if available)
     logoUrl: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fbbf24'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Ccircle cx='12' cy='5' r='3'/%3E%3Ccircle cx='19' cy='9' r='3'/%3E%3Ccircle cx='19' cy='15' r='3'/%3E%3Ccircle cx='12' cy='19' r='3'/%3E%3Ccircle cx='5' cy='15' r='3'/%3E%3Ccircle cx='5' cy='9' r='3'/%3E%3C/svg%3E",
   },
-  {
-    name: "HeroUI",
-    // Placeholder: a stylized 'H' (replace with official HeroUI logo)
-    logoUrl: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23007bff'%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-weight='bold' font-size='16' fill='white'%3EH%3C/text%3E%3C/svg%3E",
-  },
+  // {
+  //   name: "HeroUI",
+  //   // Placeholder: a stylized 'H' (replace with official HeroUI logo)
+  //   logoUrl: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23007bff'%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-weight='bold' font-size='16' fill='white'%3EH%3C/text%3E%3C/svg%3E",
+  // },
   {
     name: "MongoDB",
     logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
@@ -84,7 +84,7 @@ export default function SkillsMarquee() {
   const duplicatedSkills = [...skills, ...skills, ...skills, ...skills];
 
   return (
-    <section className="py-section-padding bg-surface-container-low overflow-hidden">
+    <section id="skills" className="py-section-padding bg-surface-container-low overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-8 text-center mb-16">
         <h2 className="font-headline-lg text-headline-lg mb-4">
           My Skills & Tools

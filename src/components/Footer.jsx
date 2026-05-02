@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <h2 className="text-2xl font-bold tracking-tight">Portfolio</h2>
+            <h2 className="text-2xl font-bold tracking-tight">Mohim</h2>
             <p className="mt-1 text-indigo-200 text-sm font-light">
               Building modern web experiences.
             </p>

@@ -22,7 +22,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden pt-20 pb-32">
+    <section id="about" className="relative overflow-hidden pt-20 pb-32">
       <div className="max-w-[1280px] mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <motion.div
           className="z-10"
@@ -54,7 +54,7 @@ export default function Hero() {
             variants={wordVars}
             className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl"
           >
-            Senior Full-Stack Developer specializing in high-performance web
+            I am a Full-Stack Developer specializing in high-performance web
             applications and intuitive user interfaces. Transformative
             engineering meets aesthetic precision.
           </motion.p>
@@ -77,10 +77,15 @@ export default function Hero() {
             </motion.button>
           </div>
         </motion.div>
-        <div className="relative">
-          <div className="absolute inset-0 bg-primary/5 rounded-[40px] -rotate-6 scale-105"></div>
+        <div className="relative group">
+          {/* Decorative background shapes */}
+          <div className="absolute -inset-4 bg-primary/5 rounded-[40px] -rotate-6 scale-105 transition-transform group-hover:rotate-0 duration-700"></div>
+          
+          {/* Main Decorative Circle */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/20 via-transparent to-transparent rounded-full blur-3xl opacity-50"></div>
+
           <motion.div
-            className="relative rounded-[40px] overflow-hidden shadow-2xl border-4 border-white"
+            className="relative rounded-[40px] overflow-hidden shadow-2xl border-4 border-white bg-white/50 backdrop-blur-sm"
             animate={{
               y: [0, -20, 0],
             }}
@@ -90,11 +95,16 @@ export default function Hero() {
               ease: "easeInOut",
             }}
           >
-            <img
-              alt="Portrait of a developer"
-              className="w-full h-[600px] object-cover"
-              src="https://lh3.googleusercontent.com/aida/ADBb0uietUdwGTl63vjHxPOTnN1bAu92WEdN3O43xXEAb4ycjiujM2A_k9Nt8Dd7mby67hnbfaVO4gc_3bisnBBa6t8XmoVlQCtqMPBhO23i667GeEt84XnkXEsNFnUjrwQKG9OvKlOoCwe8yaAz0a2O0uPZr1D6z7up1vYdCa3CXk6NMh1nbZFoGoC69E_z0k2GDFYjHE9jqGeyO-SHgMuFr88CZiwWk_jxBoJB1zGqV8Q-py7Uulk6ZmeWt-5rCoLxvVFf8PGSn7fxlg8"
-            />
+            <div className="relative">
+              {/* The "Half Circle" behind the image */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[140%] aspect-square bg-primary/10 rounded-full scale-y-[0.5] origin-bottom blur-2xl"></div>
+              
+              <img
+                alt="Portrait of a developer"
+                className="relative z-10 w-full max-h-[600px] object-cover p-10 md:p-20"
+                src="https://i.ibb.co.com/tTvfrZ5c/My-pic-removebg-preview.png"
+              />
+            </div>
           </motion.div>
           {/* Tech Accents */}
           <motion.div

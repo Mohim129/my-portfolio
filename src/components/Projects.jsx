@@ -90,9 +90,9 @@ export default function Projects() {
               </p>
               <a
                 className="inline-flex items-center gap-2 text-primary font-bold group-hover:underline"
-                href="#"
+                href={project.liveLink}
               >
-                View Case Study{" "}
+                View Project
                 <span className="material-symbols-outlined">north_east</span>
               </a>
             </div>
