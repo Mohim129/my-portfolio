@@ -6,11 +6,11 @@ export default function CTA() {
           {/* Geometric Accents */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20"></div>
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-10 -mb-10"></div>
-          <h2 className="font-display-xl text-display-xl text-white mb-8 relative z-10">
+          <h2 className="font-display-xl text-4xl md:text-6xl lg:text-display-xl text-white mb-8 relative z-10">
             Ready to launch your <br />
             next project?
           </h2>
-          <p className="font-body-lg text-body-lg text-primary-fixed max-w-2xl mx-auto mb-12 relative z-10">
+          <p className="font-body-lg text-lg md:text-body-lg text-primary-fixed max-w-2xl mx-auto mb-12 relative z-10">
             Let's collaborate on building something remarkable. My expertise in
             high-performance engineering is ready for your vision.
           </p>
