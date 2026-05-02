@@ -28,9 +28,12 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button className="hidden sm:block bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold hover:opacity-80 transition-all duration-200 active:scale-95">
+          <a 
+            href="mailto:md.mohim15@gmail.com"
+            className="hidden sm:block bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold hover:opacity-80 transition-all duration-200 active:scale-95"
+          >
             Let's Talk
-          </button>
+          </a>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -64,9 +67,12 @@ export default function Header() {
                   {link.name}
                 </a>
               ))}
-              <button className="bg-primary text-on-primary px-6 py-3 rounded-xl font-bold mt-4">
+              <a 
+                href="mailto:md.mohim15@gmail.com"
+                className="bg-primary text-on-primary px-6 py-3 rounded-xl font-bold mt-4 text-center"
+              >
                 Let's Talk
-              </button>
+              </a>
             </div>
           </motion.div>
         )}
