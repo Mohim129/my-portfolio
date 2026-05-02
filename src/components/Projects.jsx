@@ -12,22 +12,7 @@ export default function Projects() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.utils.toArray(".parallax-img").forEach((img) => {
-        gsap.to(img, {
-          y: -40,
-          ease: "none",
-          scrollTrigger: {
-            trigger: img,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-          },
-        });
-      });
-    }, containerRef);
-
-    return () => ctx.revert();
+    // Parallax movement removed to show the top of project images clearly
   }, []);
 
   return (
@@ -66,9 +51,9 @@ export default function Projects() {
               <div className="aspect-video rounded-3xl overflow-hidden bg-surface-container relative mb-6">
                 <motion.img
                   alt={project.title}
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.6, ease: [0.33, 1, 0.68, 1] }}
-                  className="parallax-img w-full h-[120%] object-cover -mt-[10%] group-hover:z-10"
+                  className="w-full h-full object-cover object-top group-hover:z-10"
                   src={project.image}
                 />
                 <div className="absolute top-6 left-6 flex gap-2 z-20">
