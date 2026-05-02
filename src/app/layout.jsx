@@ -16,6 +16,8 @@ export const metadata = {
   description: "Senior Full-Stack Developer specializing in high-performance web applications.",
 };
 
+import SmoothScrolling from "@/components/SmoothScrolling";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable}`}>
@@ -25,7 +27,9 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <SmoothScrolling>{children}</SmoothScrolling>
+      </body>
     </html>
   );
 }
