@@ -16,7 +16,7 @@ const playwriteNO = Playwrite_NO({
 });
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Mohim's Portfolio",
   description: "Senior Full-Stack Developer specializing in high-performance web applications.",
 };
 
