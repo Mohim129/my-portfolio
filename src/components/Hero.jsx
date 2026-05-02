@@ -101,7 +101,7 @@ export default function Hero() {
               
               <img
                 alt="Portrait of a developer"
-                className="relative z-10 w-full h-[600px] object-cover p-10 md:p-20"
+                className="relative z-10 w-full h-auto max-h-[600px] object-contain p-6 md:p-12 mx-auto block"
                 src="https://i.ibb.co.com/tTvfrZ5c/My-pic-removebg-preview.png"
               />
             </div>
