@@ -1,23 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 import { projects } from "@/data/portfolio";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Projects() {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    // Parallax movement removed to show the top of project images clearly
-  }, []);
-
   return (
     <section
-      ref={containerRef}
       className="py-section-padding bg-surface"
       id="projects"
     >
@@ -28,8 +17,7 @@ export default function Projects() {
               Selected Projects
             </h2>
             <p className="font-body-md text-on-surface-variant max-w-lg">
-              A curated selection of high-impact products developed for global
-              clients.
+              A curated selection of high-impact products developed with passion and precision.
             </p>
           </div>
           <div className="flex gap-4">
@@ -70,22 +58,33 @@ export default function Projects() {
               <h3 className="font-headline-md text-headline-md mb-2">
                 {project.title}
               </h3>
-              <p className="font-body-md text-on-surface-variant mb-6">
+              <p className="font-body-md text-on-surface-variant mb-6 line-clamp-2">
                 {project.description}
               </p>
-              <a
-                className="inline-flex items-center gap-2 text-primary font-bold group-hover:underline"
-                href={project.liveLink}
-              >
-                View Project
-                <span className="material-symbols-outlined">north_east</span>
-              </a>
+              <div className="flex items-center gap-6">
+                <Link
+                  href={`/projects/${project.id}`}
+                  className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform"
+                >
+                  View Details
+                  <span className="material-symbols-outlined text-sm">info</span>
+                </Link>
+                <a
+                  className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Link
+                  <span className="material-symbols-outlined text-sm">north_east</span>
+                </a>
+              </div>
             </div>
           ))}
         </div>
         <div className="mt-20 flex justify-center">
           <button className="group flex items-center gap-3 bg-white border-2 border-primary text-primary font-bold px-12 py-5 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300">
-            Next Projects{" "}
+            More Projects{" "}
             <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
               arrow_forward
             </span>

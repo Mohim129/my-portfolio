@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { aboutMe } from "@/data/portfolio";
 
 export default function Hero() {
-  const words = "Building Digital Experiences through Clean Code.".split(" ");
+  const words = `Building Digital Experiences through Clean Code.`.split(" ");
 
   const containerVars = {
     initial: { opacity: 0 },
@@ -22,7 +23,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="about" className="relative overflow-hidden pt-20 pb-32">
+    <section id="hero" className="relative overflow-hidden pt-20 pb-32">
       <div className="max-w-[1280px] mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <motion.div
           className="z-10"
@@ -50,14 +51,12 @@ export default function Hero() {
               </motion.span>
             ))}
           </motion.h1>
-          <motion.p
-            variants={wordVars}
-            className="font-body-lg text-lg md:text-body-lg text-on-surface-variant mb-10 max-w-xl"
-          >
-            I am a Full-Stack Developer specializing in high-performance web
-            applications and intuitive user interfaces. Transformative
-            engineering meets aesthetic precision.
-          </motion.p>
+          <motion.div variants={wordVars} className="mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">{aboutMe.designation}</h2>
+            <p className="font-body-lg text-lg md:text-body-lg text-on-surface-variant max-w-xl">
+              {aboutMe.intro}
+            </p>
+          </motion.div>
           <div className="flex flex-wrap gap-4">
             <motion.a
               href="#projects"
@@ -68,14 +67,16 @@ export default function Hero() {
             >
               View Projects
             </motion.a>
-            <motion.button
+            <motion.a
+              href="/resume.pdf"
+              download
               variants={wordVars}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95, transition: { type: "spring", stiffness: 400, damping: 10 } }}
-              className="border-2 border-primary text-primary font-bold px-10 py-4 rounded-xl hover:bg-primary/5 transition-all"
+              className="border-2 border-primary text-primary font-bold px-10 py-4 rounded-xl hover:bg-primary/5 transition-all inline-block"
             >
-              Read Resume
-            </motion.button>
+              Download Resume
+            </motion.a>
           </div>
         </motion.div>
         <div className="relative group">
@@ -101,7 +102,7 @@ export default function Hero() {
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[140%] aspect-square bg-primary/10 rounded-full scale-y-[0.5] origin-bottom blur-2xl"></div>
               
               <img
-                alt="Portrait of a developer"
+                alt={aboutMe.name}
                 className="relative z-10 w-full h-auto max-h-[600px] object-contain p-6 md:p-12 mx-auto block"
                 src="https://i.ibb.co.com/tTvfrZ5c/My-pic-removebg-preview.png"
               />
