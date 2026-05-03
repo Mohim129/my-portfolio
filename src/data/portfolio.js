@@ -12,7 +12,7 @@ export const aboutMe = {
   intro: "A passionate Full-Stack Developer with a knack for building clean, efficient, and scalable web applications. My journey in programming started with a curiosity about how things work on the internet, and it has evolved into a career dedicated to engineering high-performance digital experiences.",
   journey: "My programming journey began with HTML and CSS, where I discovered the joy of creating something from scratch. Over time, I delved into JavaScript and then the MERN stack, which opened up a world of possibilities for building complex, interactive applications. I enjoy the process of turning an idea into a functional reality through code.",
   workInterests: "I love working on projects that challenge my problem-solving skills, especially those involving complex state management, real-time data, and seamless user interfaces. I'm particularly interested in performance optimization and clean architecture.",
-  hobbies: "Outside of coding, I'm a pc enthusiast, gamer, cooking lover and a story writer. These interests help me stay balanced and bring a fresh perspective to my work.",
+  hobbies: "Outside of coding, I'm a pc enthusiast, gamer, cook and a story writer. These interests help me stay balanced and bring a fresh perspective to my work.",
 };
 
 export const education = [

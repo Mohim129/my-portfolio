@@ -42,17 +42,17 @@ export default function CTA() {
             <a href={`mailto:${contactInfo.email}`} className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all group">
               <span className="material-symbols-outlined text-white text-4xl mb-4 block">mail</span>
               <h3 className="text-white font-bold mb-2">Email</h3>
-              <p className="text-primary-fixed text-sm">{contactInfo.email}</p>
+              <p className="text-primary-fixed text-sm break-all">{contactInfo.email}</p>
             </a>
             <a href={`tel:${contactInfo.phone}`} className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all group">
               <span className="material-symbols-outlined text-white text-4xl mb-4 block">call</span>
               <h3 className="text-white font-bold mb-2">Phone</h3>
-              <p className="text-primary-fixed text-sm">{contactInfo.phone}</p>
+              <p className="text-primary-fixed text-sm break-all">{contactInfo.phone}</p>
             </a>
             <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\s+/g, '')}`} target="_blank" rel="noopener noreferrer" className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all group">
               <span className="material-symbols-outlined text-white text-4xl mb-4 block">chat</span>
               <h3 className="text-white font-bold mb-2">WhatsApp</h3>
-              <p className="text-primary-fixed text-sm">{contactInfo.whatsapp}</p>
+              <p className="text-primary-fixed text-sm break-all">{contactInfo.whatsapp}</p>
             </a>
           </motion.div>
 

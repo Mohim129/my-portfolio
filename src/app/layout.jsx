@@ -16,6 +16,7 @@ const playwriteNO = Playwrite_NO({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://mohim-portfolio-three.vercel.app"),
   title: {
     default: "Mohim Uddin - Full-Stack Developer Portfolio",
     template: "%s | Mohim Uddin"
@@ -27,7 +28,6 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://mohim-portfolio-three.vercel.app", // Replace with your actual domain
     title: "Mohim Uddin - Full-Stack Developer",
     description: "A passionate Full-Stack Developer specializing in high-performance web applications, MERN stack, Next.js, and scalable digital experiences.",
     siteName: "Mohim Uddin Portfolio",
