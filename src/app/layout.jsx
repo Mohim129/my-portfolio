@@ -16,8 +16,47 @@ const playwriteNO = Playwrite_NO({
 });
 
 export const metadata = {
-  title: "Mohim's Portfolio",
-  description: "Senior Full-Stack Developer specializing in high-performance web applications.",
+  title: {
+    default: "Mohim Uddin - Full-Stack Developer Portfolio",
+    template: "%s | Mohim Uddin"
+  },
+  description: "A passionate Full-Stack Developer specializing in high-performance web applications, MERN stack, Next.js, and scalable digital experiences.",
+  keywords: ["Mohim Uddin", "Full-Stack Developer", "Web Developer", "React Developer", "Next.js", "MERN stack", "JavaScript", "Portfolio"],
+  authors: [{ name: "Mohim Uddin" }],
+  creator: "Mohim Uddin",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://mohim-portfolio-three.vercel.app", // Replace with your actual domain
+    title: "Mohim Uddin - Full-Stack Developer",
+    description: "A passionate Full-Stack Developer specializing in high-performance web applications, MERN stack, Next.js, and scalable digital experiences.",
+    siteName: "Mohim Uddin Portfolio",
+    images: [
+      {
+        url: "https://i.ibb.co.com/tTvfrZ5c/My-pic-removebg-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Mohim Uddin",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohim Uddin - Full-Stack Developer",
+    description: "A passionate Full-Stack Developer specializing in high-performance web applications, MERN stack, Next.js, and scalable digital experiences.",
+    images: ["https://i.ibb.co.com/tTvfrZ5c/My-pic-removebg-preview.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 import SmoothScrolling from "@/components/SmoothScrolling";
